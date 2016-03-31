@@ -43,6 +43,7 @@ module.exports = {
         'locallydb',
         'fs',
         'os',
+        'path',
         'lru-cache',
         'koa-webpack-dev-middleware',
         'co-busboy'
