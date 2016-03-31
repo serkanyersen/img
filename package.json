@@ -2,9 +2,9 @@
   "name": "img",
   "version": "1.0.0",
   "description": "test",
-  "main": "index.js",
+  "main": "dist/server.bundle.js",
   "scripts": {
-    "start": "webpack --watch --config webpack.conf.js",
+    "start": "webpack --watch",
     "koa": "nodemon dist/server.bundle.js"
   },
   "author": "Serkan Yersen <serkanyersen@gmail.com> (http://serkan.io/)",

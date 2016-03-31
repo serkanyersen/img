@@ -2,10 +2,18 @@
 <html>
   <head>
     <title>{{title}}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/dropzone.css">
   </head>
   <body>
-    {{{@body}}}
+      <div class="content">
+        <header>
+            <h3><a href="/">Images</a></h3>
+        </header>
+        {{{@body}}}
+      </div>
     <script src="js/client.bundle.js"></script>
   </body>
 </html>

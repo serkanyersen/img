@@ -1,0 +1,42 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+body {
+    background: #333;
+    color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+}
+
+a, a:link, a:hover,
+a:active, a:visited {
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    border-bottom: 1px solid #fff;
+    margin-bottom: 20px;
+}
+
+.content {
+    max-width: 640px;
+}
+
+.dropzone {
+  min-height: 150px;
+  width: 100%;
+  border: 1px dashed #fff;
+  padding: 20px 20px;
+  margin-bottom: 20px;
+}
+
+img {
+    border: 1px solid #fff;
+}
+
+.thumb {
+    max-width: 100px;
+}
