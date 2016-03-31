@@ -1,0 +1,9 @@
+<form action="/file-upload" class="dropzone" id="upload-form">
+    <input type="file" name="file" />
+</form>
+
+{{#each images}}
+    <a href="/image/{{ id }}">
+        <img src="/images/{{ name }}" style="max-width: 100px">
+    </a>
+{{/each}}
