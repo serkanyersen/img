@@ -27,8 +27,7 @@ const mimes = {
 routes.get('/', function* home() {
     const images = this.db.collection('images');
     yield this.render('index', {
-        title: 'Test Page',
-        name: 'World',
+        title: 'Images',
         images: images.items
     });
 });
@@ -58,6 +57,7 @@ routes.get('/:id', function* imageView() {
 
     images.update(id[0], { views: (image.views || 0) + 1 });
     yield this.render('image', {
+        title: `Image: ${image.id}`,
         image
     });
 });
