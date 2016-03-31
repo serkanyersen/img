@@ -42,7 +42,9 @@ routes.get('/:id.:ext', function* imageStatic() {
             this.body = image;
         } else {
             images.update(id[0], { views: (image.views || 0) + 1 });
-            yield send(this, `public/images/${image.name}`);
+            yield send(this, `public/images/${image.name}`, {
+                maxage: 31536000
+            });
         }
     } else {
         this.status = 404;
@@ -114,6 +116,8 @@ app.use(handlebars({
 app.use(routes.routes())
     .use(routes.allowedMethods());
 
-app.use(serve('public'));
+app.use(serve('public', {
+    maxage: 31536000
+}));
 
 app.listen(3000);
