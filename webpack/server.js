@@ -41,6 +41,7 @@ module.exports = {
         'koa-send',
         'hashids',
         'locallydb',
+        'easyimage',
         'fs',
         'os',
         'path',
